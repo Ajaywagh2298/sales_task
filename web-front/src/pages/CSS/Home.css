@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+.avatar1{
+    color: #fff;
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    background: #4aba70;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.avatar2{
+    color: #fff;
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    background: #3498DB;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.avatar3{
+    color: #fff;
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    background: #E74C3C;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.avatar4{
+    color: #fff;
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    background: #F1C40F;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.btn1{
+    background: #4aba70;
+    border: none;
+    color: white;
+    line-height: normal;
+    width: 150px;
+}
+.btn2{
+    background: #3498DB;
+    border: none;
+    color: white;
+    line-height: normal;
+    width: 150px;
+}
+.btn3{
+    background: #E74C3C;
+    border: none;
+    color: white;
+    line-height: normal;
+    width: 150px;
+}
+.btn4{
+     background: #F1C40F;
+     border: none;
+     color: white;
+     line-height: normal;
+     width: 150px;
+ }
+
+
+.circle-box{
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 9;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.text-logo{
+    font-size: 20px;
+    color: #34495E ;
+    margin-bottom: 2%;
+    font-family: "Calibri Light";
+    font-weight: bold;
+}
+
+
+
+.conn-box{
+    position: absolute;
+    left: 29%;
+    transform: translate(15%, 15%);
+    height: 400px;
+    width: 600px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    text-align: justify;
+    color: black;
+    padding: 40px;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-weight: 900;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.flap {
+    width: 100%;
+    height: 100%;
+}
+
+.flap::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: #4aba70;
+    background-position: 100px;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background: #3498DB;
+    background-position: -200px;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.container:hover .flap::after {
+    transform: translatex(300px);
+}
+
+.container:hover .flap::before{
+    transform: translatex(-300px);
+}
+.note-text{
+    font-size:14px;
+}
