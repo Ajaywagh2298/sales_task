@@ -1,0 +1,247 @@
+{
+    "info": {
+        "_postman_id": "592d5a1c-3231-487f-8b5c-8a63ede0f382",
+        "name": "requests",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Users",
+            "request": {
+                "description": "",
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"firstName\": \"ajay\",\n  \"lastName\": \"wagh\",\n  \"mobile\": \"9090909090\",\n  \"email\": \"ajay.wagh@wallet.local\",\n\t\"password\": \"BadPassword1!\"\n}"
+                },
+                "url": {
+                    "raw": "localhost:8080/users",
+                    "host": [
+                        "localhost:8080"
+                    ],
+                    "path": [
+                        "users"
+                    ]
+                },
+                "auth": {}
+            },
+            "response": []
+        },
+        {
+            "name": "GET Users",
+            "request": {
+                "description": "",
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "localhost:8080/users",
+                    "host": [
+                        "localhost:8080"
+                    ],
+                    "path": [
+                        "users"
+                    ]
+                },
+                "auth": {}
+            },
+            "response": []
+        },
+        {
+            "name": "Login User",
+            "request": {
+                "description": "",
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"ajay.wagh@wallet.local\",\n\t\"password\": \"BadPassword1!\"\n}"
+                },
+                "url": {
+                    "raw": "localhost:8080/login",
+                    "host": [
+                        "localhost:8080"
+                    ],
+                    "path": [
+                        "login"
+                    ]
+                },
+                "auth": {}
+            },
+            "response": []
+        },
+        {
+            "name": "Add Money",
+            "request": {
+                "description": "",
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"amount\": 123,\n  \"description\": \"emi\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/users/fb91d511-e46a-4c7e-81d7-4e68914c7bb4/transactions/credit",
+                    "protocol": "http",
+                    "host": [
+                        "localhost:8080"
+                    ],
+                    "path": [
+                        "users",
+                        "fb91d511-e46a-4c7e-81d7-4e68914c7bb4",
+                        "transactions",
+                        "credit"
+                    ]
+                },
+                "auth": {}
+            },
+            "response": []
+        },
+        {
+            "name": "Withdraw Money",
+            "request": {
+                "description": "",
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"amount\": 123,\n  \"description\": \"emi\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/users/fb91d511-e46a-4c7e-81d7-4e68914c7bb4/transactions/debit",
+                    "protocol": "http",
+                    "host": [
+                        "localhost:8080"
+                    ],
+                    "path": [
+                        "users",
+                        "fb91d511-e46a-4c7e-81d7-4e68914c7bb4",
+                        "transactions",
+                        "debit"
+                    ]
+                },
+                "auth": {}
+            },
+            "response": []
+        },
+        {
+            "name": "Show Transactions",
+            "request": {
+                "description": "",
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"amount\": 23,\n  \"description\": \"emi\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/users/fb91d511-e46a-4c7e-81d7-4e68914c7bb4/transactions",
+                    "protocol": "http",
+                    "host": [
+                        "localhost:8080"
+                    ],
+                    "path": [
+                        "users",
+                        "fb91d511-e46a-4c7e-81d7-4e68914c7bb4",
+                        "transactions"
+                    ]
+                },
+                "auth": {}
+            },
+            "response": []
+        },
+        {
+            "name": "GET User By Id",
+            "request": {
+                "description": "",
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "http://localhost:8080/users/7869f70b-5c84-47f5-920e-0a0c49bb17cb",
+                    "protocol": "http",
+                    "host": [
+                        "localhost:8080"
+                    ],
+                    "path": [
+                        "users",
+                        "7869f70b-5c84-47f5-920e-0a0c49bb17cb"
+                    ]
+                },
+                "auth": {}
+            },
+            "response": []
+        },
+        {
+            "name": "Delete User",
+            "request": {
+                "description": "",
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "localhost:8080/users/7869f70b-5c84-47f5-920e-0a0c49bb17cb",
+                    "host": [
+                        "localhost:8080"
+                    ],
+                    "path": [
+                        "users",
+                        "7869f70b-5c84-47f5-920e-0a0c49bb17cb"
+                    ]
+                },
+                "auth": {}
+            },
+            "response": []
+        }
+    ]
+}

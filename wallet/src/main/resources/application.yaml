@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/demo;AUTO_SERVER=true
+    username: h2
+    password: h2
+    driverClassName: org.h2.Driver
+    tomcat:
+      max-active: 5
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console.enabled: true
+    console:
+      settings:
+        web-allow-others: true
+server:
+  port : 9090
+web:
+  cors:
+    allowed-origins: "http://localhost:3000"
+    allowed-methods: GET, POST, DELETE, OPTIONS
+    max-age: 3600
+    allowed-headers: "Accept, Accept-Language, Content-Language, Content-Type"
+    exposed-headers: "X-Get-Header"

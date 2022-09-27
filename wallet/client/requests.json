@@ -1,0 +1,282 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-09-19T20:54:06.010Z",
+  "__export_source": "insomnia.desktop.app:v2022.5.1",
+  "resources": [
+    {
+      "_id": "req_db72fa3a91fe47388482b9e2a4aa9c8b",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663620830126,
+      "created": 1663574097543,
+      "url": "localhost:8080/users",
+      "name": "Create Users",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"firstName\": \"ajay\",\n  \"lastName\": \"wagh\",\n  \"mobile\": \"9090909090\",\n  \"email\": \"ajay.wagh@wallet.local\",\n\t\"password\": \"BadPassword1!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_70c6b98077b34b83bd074709d1a2a77b"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1663574097543,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "parentId": null,
+      "modified": 1663574097521,
+      "created": 1663574097521,
+      "name": "New Document",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_2fd173720b5b4e93be185650a2b5aa8e",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663620690191,
+      "created": 1663615831972,
+      "url": "localhost:8080/login",
+      "name": "Login User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"ajay.wagh@wallet.local\",\n\t\"password\": \"BadPassword1!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_70c6b98077b34b83bd074709d1a2a77b"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1663574097518,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9e95a09c669342fc8c27d5b791b00020",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663618594361,
+      "created": 1663615796235,
+      "url": "localhost:8080/users",
+      "name": "GET Users",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"firstName\": \"vikrant\",\n  \"lastName\": \"wagh\",\n  \"mobile\": \"9090909090\",\n  \"email\": \"vikrant.wagh@wallet.local\",\n\t\"password\": \"BadPassword1!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_70c6b98077b34b83bd074709d1a2a77b"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1663574097493,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_759d1224a1b941bfb52f3b019bb86e76",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663619465995,
+      "created": 1663619455432,
+      "url": "http://localhost:8080/users/fae19bed-f125-4a11-927c-bb56451b065d",
+      "name": "GET User By Id",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"firstName\": \"vikrant\",\n  \"lastName\": \"wagh\",\n  \"mobile\": \"9090909090\",\n  \"email\": \"vikrant.wagh@wallet.local\",\n\t\"password\": \"BadPassword1!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_70c6b98077b34b83bd074709d1a2a77b"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1663574097468,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_929d39a8f6e949c1958978d25231b97c",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663619260800,
+      "created": 1663615898399,
+      "url": "http://localhost:8080/users/fae19bed-f125-4a11-927c-bb56451b065d/transactions/credit",
+      "name": "Add Money",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"amount\": 123,\n  \"description\": \"emi\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_dc1a75731c934426a41898d1df017408"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1663574097443,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e76edcb4b6b04bad8dac988b69e417c7",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663619277683,
+      "created": 1663618628429,
+      "url": "http://localhost:8080/users/fae19bed-f125-4a11-927c-bb56451b065d/transactions/debit",
+      "name": "Withdraw Money",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"amount\": 23,\n  \"description\": \"emi\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_dc1a75731c934426a41898d1df017408"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1663574097393,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_82d1c18ad1464233a5caf20593acf491",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663619543194,
+      "created": 1663618720028,
+      "url": "http://localhost:8080/users/fae19bed-f125-4a11-927c-bb56451b065d/transactions",
+      "name": "Show Transactions",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"amount\": 23,\n  \"description\": \"emi\",\n  \"userId\": \"8bb3e0e4-0d98-4c79-8e37-307149b94d3f\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_dc1a75731c934426a41898d1df017408"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1663574097343,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_86074e8776e36f2b8b0fdbee8e9c2106a5ed24a2",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663574097537,
+      "created": 1663574097537,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1663574097537,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_86074e8776e36f2b8b0fdbee8e9c2106a5ed24a2",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663574097540,
+      "created": 1663574097540,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_5f466173ed4647ec8f0feda4180e17dd",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663574097533,
+      "created": 1663574097533,
+      "fileName": "New Document",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "uts_2af4e636bd4f4b4f8973d42ccfa91266",
+      "parentId": "wrk_d4e365beb9114056b3a839b0aef0bf35",
+      "modified": 1663574097544,
+      "created": 1663574097544,
+      "name": "Example Test Suite",
+      "_type": "unit_test_suite"
+    }
+  ]
+}
